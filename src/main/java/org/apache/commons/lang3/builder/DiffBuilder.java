@@ -101,6 +101,8 @@ public class DiffBuilder<T> implements Builder<DiffResult<T>> {
      *            is never changed throughout the life of this {@link DiffBuilder}.
      * @throws IllegalArgumentException
      *             if {@code lhs} or {@code rhs} is {@code null}
+     * @throws NullPointerException
+     *             if {@code lhs} or {@code rhs} is {@code null}
      * @since 3.4
      */
     public DiffBuilder(final T lhs, final T rhs,
